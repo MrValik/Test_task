@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="root">
+
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Add Article</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <div class="container" id="article-list">
+      <h2>Article List</h2>
+      <ul>
+
+        <li class="article-item">
+          <img src="https://via.placeholder.com/150" alt="Article Image">
+          <div class="article-details">
+            <h3>Article Title</h3>
+            <p>Author: MrValik</p>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <button class="pin-btn">Pin</button>
+          <button class="remove-btn">Remove</button>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="container" id="add-article">
+      <h2>Add Article</h2>
+      <form>
+        <input type="text" placeholder="Title" required>
+        <input type="text" placeholder="Author" required>
+        <textarea placeholder="Description" required></textarea>
+        <button type="submit">Add</button>
+      </form>
+    </div>
+
+    <div class="container" id="news-page">
+      <h2>News</h2>
+      <ul>
+        <li class="news-item">
+          <img src="https://via.placeholder.com/150" alt="News Image">
+          <div class="news-details">
+            <h3>News Title</h3>
+            <p>Author: MrValik</p>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </li>
+      </ul>
+      <button id="load-more-btn">Load More</button>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
